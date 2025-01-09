@@ -12,17 +12,17 @@ const router = createRouter({
   history: createWebHistory(),
   routes: [
     { path: '/', redirect: '/mentors'},
-    { path: '/mentors', component: null },
+    { path: '/mentors', component: MentorsList },
     { 
       path: '/mentors/:id', 
-      component: null, 
+      component: MentorDetail, 
       children: [
-        { path: 'contact', component: null }
+        { path: 'contact', component: ContactMentor }
       ] 
     },
-    { path: '/register', component: null },
-    { path: '/requests', component: null },
-    { path: '/:notFound(.*)', component: null }
+    { path: '/register', component: MentorRegistration },
+    { path: '/requests', component: RequestsReceived },
+    { path: '/:notFound(.*)', component: NotFound }
   ]
 })
 
