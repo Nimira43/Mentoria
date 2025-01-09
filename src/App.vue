@@ -29,9 +29,6 @@
 
   .logo {
     font-family: 'Great Vibes', cursive;
-    font-weight: lighter;
-    font-size: 2.8rem;
-    letter-spacing: 1px;
   }
 
   h1, h2, h3, h4, h5, h6 {
