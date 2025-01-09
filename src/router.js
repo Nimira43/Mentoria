@@ -5,16 +5,17 @@ const router = createRouter({
   routes: [
     { path: '/', redirect: '/mentors'},
     { path: '/mentors', component: null },
-    { path: '/mentors/:id', 
+    { 
+      path: '/mentors/:id', 
       component: null, 
       children: [
-        { path: 'contact', component: null },
+        { path: 'contact', component: null }
       ] 
     },
     { path: '/register', component: null },
     { path: '/requests', component: null },
-    { path: '/:notFound(.*)', component: null },
-  ],
+    { path: '/:notFound(.*)', component: null }
+  ]
 })
 
 export default router
