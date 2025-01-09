@@ -1,3 +1,25 @@
 <template>
   <router-view></router-view>
 </template>
+
+<style>
+  * {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-family: 'Cormorant Garamond', serif;
+  }
+
+  body {
+    margin: 0;
+  }
+
+  .logo {
+    font-family: 'Great Vibes', cursive;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Libre Caslon Text', serif;
+  }
+</style>
