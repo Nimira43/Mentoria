@@ -73,6 +73,14 @@
     align-items: center;
   }
 
+  li {
+    margin: 0 0.5rem;
+  }
+
+  li a {
+    text-transform: uppercase;
+  }
+
   .logo a {
     border: none;
   }

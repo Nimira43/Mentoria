@@ -36,6 +36,5 @@
     font-weight: lighter;
     font-size: 2.5rem;
     letter-spacing: 2px;
-
   }
 </style>
