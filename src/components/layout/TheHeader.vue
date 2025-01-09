@@ -33,4 +33,27 @@
     padding: 0.75rem 1.5rem;
     border: 1px solid transparent;
   }
+
+  a:active,
+  a:hover,
+  a.router-link-active {
+    border: 1px solid #ffd700;
+  }
+
+  h1 {
+    margin: 0;
+  }
+
+  h1 a {
+    color: #fffaf0;
+    margin: 0;
+  }
+
+  h1 a:hover,
+  h1 a:active,
+  h1 a.router-link-active {
+    border-color: transparent;
+  }
+
+
 </style>
