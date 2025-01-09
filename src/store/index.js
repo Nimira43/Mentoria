@@ -1,9 +1,11 @@
 import { createStore } from 'vuex/dist/vuex.mjs'
 
-import coachesModule from './modules/coaches'
+import mentorsModule from './modules/mentors/index.js'
 
 const store = createStore ({
-  modules:
+  modules: {
+    mentors: mentorsModule
+  }
 })
 
 export default store
