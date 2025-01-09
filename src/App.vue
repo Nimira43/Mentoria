@@ -27,11 +27,15 @@
     margin: 0;
   }
 
-  .logo {
-    font-family: 'Great Vibes', cursive;
-  }
-
   h1, h2, h3, h4, h5, h6 {
     font-family: 'Libre Caslon Text', serif;
+  }
+
+  .logo {
+    font-family: 'Great Vibes', cursive;
+    font-weight: lighter;
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+
   }
 </style>

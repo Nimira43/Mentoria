@@ -1,8 +1,8 @@
 <template>
   <header>
     <nav>
-      <h1>
-        <router-link to="/">Search Mentors</router-link>
+      <h1 class="logo">
+        <router-link to="/">Mentoria</router-link>
       </h1>
       <ul>
         <li>
@@ -31,13 +31,14 @@
     color: #fffaf0;
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    border: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    transition: border-bottom 0.5s ease-in;
   }
 
   a:active,
   a:hover,
   a.router-link-active {
-    border: 1px solid #ffd700;
+    border-bottom: 1px solid #ffd700;
   }
 
   h1 {
@@ -52,7 +53,7 @@
   h1 a:hover,
   h1 a:active,
   h1 a.router-link-active {
-    border-color: transparent;
+    border-bottom: transparent;
   }
 
   header nav {
@@ -63,4 +64,16 @@
     align-items: center;
   }
 
+  header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo a {
+    border: none;
+  }
 </style>
