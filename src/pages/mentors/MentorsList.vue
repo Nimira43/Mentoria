@@ -22,7 +22,7 @@
       filteredMentors() {
         return this.$store.getters['mentors/mentors']
       },
-      hasCoaches() {
+      hasMentors() {
         return this.$store.getters['mentors/hasMentors']
       }
     }
