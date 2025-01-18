@@ -6,7 +6,7 @@ export default {
   namespaced: true,
   state() {
     return {
-      coaches: [
+      mentors: [
         {
           id: 'c1',
           firstName: 'Stanley',
