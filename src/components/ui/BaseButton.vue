@@ -40,9 +40,9 @@
     text-decoration: none;
     padding: 0.75rem 1,5rem;
     font: inherit;
-    background-color: #111;
-    border: none;
-    color: #fff;
+    background-color: #012222;
+    border: 1px solid #012222;
+    color: #ffd700;
     cursor: pointer;
     border-radius: 5px;
     margin-right: 0.5rem;
@@ -52,8 +52,21 @@
 
   a:hover, a:active,
   button:hover, button:active {
-    background-color: black;
+    background-color: #111;
+    border-color: #111;
   }
 
+  .flat {
+    background-color: transparent;
+    color: #012222;
+    border: none;
+  }
   
+  .outline {
+    background-color: transparent;
+    border-color: #111;
+    color: #111
+  }
+
+
 </style>
