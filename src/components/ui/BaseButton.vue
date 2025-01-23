@@ -70,8 +70,8 @@
   
   .outline {
     background-color: transparent;
-    border-color: #024747;
-    color: #024747;
+    border-color: #012222;
+    color: #012222;
   }
 
   .flat:hover,

@@ -17,25 +17,22 @@
 
 <style scoped>
   .badge {
-    background: purple;
-    color: white;
+    background: #012222;
+    color: #ffffee;
     border-radius: 5px;
     padding: 0.5rem 1.5rem;
     display: inline-block;
     margin-right: 0.5rem;
   }
   .frontend {
-    background-color: green;
-    color: white;
+    background-color: #de440c;
   }
   
   .backend {
-    background-color: darkgreen;
-    color: white;
+    background-color: #0fa4d6;
   }
   
   .career {
-    background-color: violet;
-    color: white;
+    background-color: #0ad425;
   }
 </style>
