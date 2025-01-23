@@ -3,23 +3,25 @@
     Filter
   </section>
   <section>
-    <div class="controls">
-      <button>Refresh</button>
-      <router-link to="/register">Register as Mentor</router-link>
-    </div>
-    <ul v-if="hasMentors">
-      <mentor-item
-        v-for="mentor in filteredMentors"
-        :key="mentor.id"
-        :id="mentor.id" 
-        :first-name="mentor.firstName"
-        :last-name="mentor.lastName"
-        :rate="mentor.hourlyRate"  
-        :areas="mentor.areas"
-      >
-    </mentor-item>>
-    </ul>
-    <h3 v-else>No Mentors Found</h3>
+    <base-card>
+      <div class="controls">
+        <button>Refresh</button>
+        <router-link to="/register">Register as Mentor</router-link>
+      </div>
+      <ul v-if="hasMentors">
+        <mentor-item
+          v-for="mentor in filteredMentors"
+          :key="mentor.id"
+          :id="mentor.id" 
+          :first-name="mentor.firstName"
+          :last-name="mentor.lastName"
+          :rate="mentor.hourlyRate"  
+          :areas="mentor.areas"
+        >
+      </mentor-item>>
+      </ul>
+      <h3 v-else>No Mentors Found</h3>
+    </base-card>  
   </section>
 </template>
 
