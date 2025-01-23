@@ -12,18 +12,35 @@
     </div>
     <div class="actions">
       <router-link
-        to="/mentors/c1/contact"
+        :to="mentorContactLink"
       >
         Contact
       </router-link>
       <router-link
-        to="/mentors/c1"
+        :to="mentorDetailsLink"
       >
         View Details
       </router-link>
     </div>
   </li>
 </template>
+
+<script>
+  export default {
+    props: ['id', 'firstName', 'lastName', 'areas'],
+    computed: {
+      fullName() {
+        return this.firstName + ' ' + this.lastName
+      },
+      mentorContactLink() {
+        return this.$route.path + '/' + this.id + '/contact'
+      },
+      mentorDetailsLink() {
+        return this.$route.path + '/' + this.id
+      }
+    }
+  }
+</script>
 
 <style scoped>
   li {
