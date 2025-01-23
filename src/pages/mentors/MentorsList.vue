@@ -17,8 +17,7 @@
           :last-name="mentor.lastName"
           :rate="mentor.hourlyRate"  
           :areas="mentor.areas"
-        >
-      </mentor-item>>
+        ></mentor-item>
       </ul>
       <h3 v-else>No Mentors Found</h3>
     </base-card>  
