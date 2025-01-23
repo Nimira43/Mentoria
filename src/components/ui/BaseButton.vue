@@ -36,13 +36,16 @@
 </script>
 
 <style scoped>
-  button, a {
+  button, 
+  a {
     text-decoration: none;
-    padding: 0.75rem 1,5rem;
-    font: inherit;
+    padding: 0.75rem 1.5rem;
+    font-family: inherit;
+    font-weight: 500;
     background-color: #012222;
     border: 1px solid #012222;
-    color: #ffd700;
+    text-transform: uppercase;
+    color: #ffffee;
     cursor: pointer;
     border-radius: 5px;
     margin-right: 0.5rem;
@@ -50,10 +53,13 @@
     transition: all 0.5s ease-in-out;
   }
 
-  a:hover, a:active,
-  button:hover, button:active {
-    background-color: #111;
-    border-color: #111;
+  a:hover, 
+  a:active,
+  button:hover, 
+  button:active {
+    color: #012222;
+    background-color: #ffd700;
+    border-color: #012222;
   }
 
   .flat {
@@ -64,8 +70,16 @@
   
   .outline {
     background-color: transparent;
-    border-color: #111;
-    color: #111
+    border-color: #024747;
+    color: #024747;
+  }
+
+  .flat:hover,
+  .flat:active,
+  .outline:hover,
+  .outline:active {
+    background-color: #012222;
+    color: #ffffee;
   }
 
 

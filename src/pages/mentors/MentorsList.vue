@@ -5,8 +5,8 @@
   <section>
     <base-card>
       <div class="controls">
-        <button>Refresh</button>
-        <router-link to="/register">Register as Mentor</router-link>
+        <base-button mode="outline">Refresh</base-button>
+        <base-button link to="/register">Register as Mentor</base-button>
       </div>
       <ul v-if="hasMentors">
         <mentor-item
@@ -26,10 +26,12 @@
 
 <script>
   import MentorItem from '../../components/mentors/MentorItem.vue'
+import BaseButton from '../../components/ui/BaseButton.vue'
 
   export default {
     components: {
-      MentorItem
+      MentorItem,
+        BaseButton
     },
     computed: {
       filteredMentors() {
