@@ -25,7 +25,7 @@
     margin-right: 0.5rem;
   }
   .frontend {
-    background-color: #de440c;
+    background-color: #e14c16;
   }
   
   .backend {

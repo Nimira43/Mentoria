@@ -58,7 +58,7 @@
   button:hover, 
   button:active {
     color: #012222;
-    background-color: #ffd700;
+    background-color: transparent;
     border-color: #012222;
   }
 
