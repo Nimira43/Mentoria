@@ -40,6 +40,9 @@ export default {
     rate() {
       return this.selectedMentor.hourlyRate
     },
+    description() {
+      return this.selectedMentor.description
+    },
     contactLink() {
       return this.$route.path + '/' + this.id + '/contact'
     }
