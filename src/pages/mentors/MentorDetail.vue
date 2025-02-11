@@ -37,6 +37,9 @@ export default {
     areas() {
       return this.selectedMentor.areas
     },
+    rate() {
+      return this.selectedMentor.hourlyRate
+    },
     contactLink() {
       return this.$route.path + '/' + this.id + '/contact'
     }
