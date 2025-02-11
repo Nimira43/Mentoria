@@ -24,6 +24,16 @@
 
 <script>
 export default {
-    props: ['id']
-  }
+  props: ['id'],
+  data() {
+    return {
+      selectedCoach: null    
+    }
+  },
+  created() {
+    this.selectedCoach = this.$store.getters['mentors/mentors'].find(
+      (mentor) => mentor.id === this.id
+    )
+  },
+}
 </script>
