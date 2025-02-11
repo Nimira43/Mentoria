@@ -8,7 +8,7 @@
   <section>
     <base-card>
       <header>
-        <h2>Find to out more please me.</h2>
+        <h2>To find out more please get in touch with me.</h2>
         <base-button link :to='contactLink'>Contact</base-button>
       </header>
       <router-view></router-view>
@@ -27,11 +27,22 @@ export default {
   props: ['id'],
   data() {
     return {
-      selectedCoach: null    
+      selectedMentor: null    
+    }
+  },
+  computed: {
+    fullName() {
+      return this.selectedMentor.firstName + ' ' + this.selectedMentor.lastName
+    },
+    areas() {
+      return this.selectedMentor.areas
+    },
+    contactLink() {
+      return this.$route.path + '/' + this.id + '/contact'
     }
   },
   created() {
-    this.selectedCoach = this.$store.getters['mentors/mentors'].find(
+    this.selectedMentor = this.$store.getters['mentors/mentors'].find(
       (mentor) => mentor.id === this.id
     )
   },
