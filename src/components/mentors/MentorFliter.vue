@@ -48,8 +48,9 @@ export default {
       const isActive = event.target.checked
       const updatedFilters = {
         ...this.filters,
-        [inputId]
+        [inputId]: isActive
       }
+      this.filters = updatedFilters
     }
   }
 }
