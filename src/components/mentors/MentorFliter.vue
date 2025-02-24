@@ -33,6 +33,7 @@
 
 <script>
 export default {
+  emits: ['change-filter'],
   data() {
     return {
       filters: {
@@ -42,7 +43,7 @@ export default {
       }
     }
   },
-  method: {
+  methods: {
     setFilter(event) {
       const inputId = event.target.id
       const isActive = event.target.checked
