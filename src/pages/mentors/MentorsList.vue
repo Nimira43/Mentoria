@@ -1,6 +1,8 @@
 <template>
   <section>
-    Filter
+    <mentor-filter>
+      
+    </mentor-filter>
   </section>
   <section>
     <base-card>
@@ -25,23 +27,25 @@
 </template>
 
 <script>
-  import MentorItem from '../../components/mentors/MentorItem.vue'
+import MentorItem from '../../components/mentors/MentorItem.vue'
+import MentorFilter from '../../components/mentors/MentorFilter.vue';  
 import BaseButton from '../../components/ui/BaseButton.vue'
 
-  export default {
-    components: {
-      MentorItem,
-        BaseButton
+export default {
+  components: {
+    MentorItem,
+    MentorFilter,
+    BaseButton
+  },
+  computed: {
+    filteredMentors() {
+      return this.$store.getters['mentors/mentors']
     },
-    computed: {
-      filteredMentors() {
-        return this.$store.getters['mentors/mentors']
-      },
-      hasMentors() {
-        return this.$store.getters['mentors/hasMentors']
-      }
+    hasMentors() {
+      return this.$store.getters['mentors/hasMentors']
     }
   }
+}
 </script>
 
 
