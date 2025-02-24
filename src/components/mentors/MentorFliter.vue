@@ -14,5 +14,18 @@
       <label for="career">Career</label>
     </span>
   </base-card>
-
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      filters: {
+        frontend: true,
+        backend: true,
+        career: true,
+      }
+    }
+  }
+}
+</script>
