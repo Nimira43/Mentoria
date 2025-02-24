@@ -45,6 +45,7 @@ export default {
   method: {
     setFilter(event) {
       const inputId = event.target.id
+      const isActive = event.target.checked
     }
   }
 }
