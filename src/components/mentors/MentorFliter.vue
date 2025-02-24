@@ -2,15 +2,30 @@
   <base-card>
     <h2>Search for a Mentor</h2>
     <span class="filter-option">
-      <input type="checkbox" id="frontend" checked />
+      <input 
+        type="checkbox"  
+        id="frontend" 
+        checked 
+        @change="setFilter"  
+      />
       <label for="frontend">Frontend</label>
     </span>
     <span class="filter-option">
-      <input type="checkbox" id="backend" checked />
+      <input 
+        type="checkbox" 
+        id="backend" 
+        checked 
+        @change="setFilter"
+      />
       <label for="backend">Backend</label>
     </span>
     <span class="filter-option">
-      <input type="checkbox" id="career" checked />
+      <input 
+        type="checkbox" 
+        id="career" 
+        checked 
+        @change="setFilter"
+      />
       <label for="career">Career</label>
     </span>
   </base-card>
@@ -25,6 +40,11 @@ export default {
         backend: true,
         career: true,
       }
+    }
+  },
+  method: {
+    setFilter(event) {
+      const inputId = event.target.id
     }
   }
 }
