@@ -1,7 +1,7 @@
 <template>
   <section>
     <mentor-filter>
-      
+      @change-filter="setFilters"
     </mentor-filter>
   </section>
   <section>
@@ -37,12 +37,26 @@ export default {
     MentorFilter,
     BaseButton
   },
-  computed: {
+  data() {
+    return {
+      activeFilters: {
+        frontend: true,
+        backend: true,
+        career: true
+      }
+    }
+  },
+  computed: {   
     filteredMentors() {
       return this.$store.getters['mentors/mentors']
     },
     hasMentors() {
       return this.$store.getters['mentors/hasMentors']
+    }
+  },
+  methods: {
+    setFilters(updatedFilters) {
+      this.activeFilters = updatedFilters
     }
   }
 }
