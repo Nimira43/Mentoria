@@ -90,5 +90,63 @@ export default {
     }
   }
 }
-
 </script>
+
+<style scoped>
+.form-control {
+  margin: 0.5rem 0;
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input[type='checkbox'] + label {
+  font-weight: normal;
+  display: inline;
+  margin: 0 0 0 0.5rem;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #111;
+  font: inherit;
+
+  border-radius: 3px;
+}
+
+input:focus,
+textarea:focus {
+  background-color: #ffffee;
+  outline: none;
+  border-color: #012222;
+}
+
+input[type='checkbox'] {
+  display: inline;
+  width: auto;
+  border: none;
+}
+
+input[type='checkbox']:focus {
+  outline: #012222 solid 1px;
+}
+
+h3 {
+  margin: 0.5rem 0;
+  font-size: 1rem;
+}
+
+.invalid label {
+  color: #ff0000;
+}
+
+.invalid input,
+.invalid textarea {
+  border: 1px solid #ff0000;
+}
+</style>

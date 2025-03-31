@@ -10,10 +10,10 @@
 <script>
 import MentorForm from '../../components/mentors/MentorForm.vue'
 
-
 export default {
   components: {
     MentorForm
   }
 }
 </script>
+
