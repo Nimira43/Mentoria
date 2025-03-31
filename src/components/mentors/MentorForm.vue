@@ -76,6 +76,18 @@ export default {
       rate: null,
       areas: []
     }
+  },
+  methods: {
+    submitForm() {
+      const formData = {
+        first: this.firstName,
+        last: this.lastName,
+        desc: this.description,
+        rate: this.rate,
+        area: this.areas
+      }
+      console.log(formData)
+    }
   }
 }
 
