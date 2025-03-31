@@ -34,3 +34,18 @@
     <base-button>Register</base-button>
   </form>
 </template>
+
+<script>
+export default {
+  data() {
+    return {
+      firstName: '',
+      lastName: '',
+      description: '',
+      rate: null,
+      areas: []
+    }
+  }
+}
+
+</script>
