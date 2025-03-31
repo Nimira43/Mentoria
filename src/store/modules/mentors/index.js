@@ -13,7 +13,7 @@ export default {
           lastName: 'Kubrick',
           areas: ['frontend', 'backend', 'career'],
           description:
-            "I'm Stanley and I've work in Web Development for the last 10 years. With my experience I'm sure I'll be able to guide you in your career.",
+            "I'm Stanley and I've worked in Web Development for the last 10 years. With my experience I'm sure I'll be able to guide you in your career.",
           hourlyRate: 42
         },
         {
