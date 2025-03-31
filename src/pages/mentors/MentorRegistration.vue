@@ -1,6 +1,9 @@
 <template>
   <section>
-    <h2>Register as a Mentor now</h2>
+    <base-card>
+      <h2>Register as a Mentor now</h2>
+      <mentor-form></mentor-form>
+    </base-card>
   </section>
 </template>
 
@@ -9,6 +12,8 @@ import MentorForm from '../../components/mentors/MentorForm.vue'
 
 
 export default {
-
+  components: {
+    MentorForm
+  }
 }
 </script>
