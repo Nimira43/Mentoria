@@ -1,5 +1,4 @@
 import { createRouter, createWebHistory } from 'vue-router'
-
 import MentorDetail from './pages/mentors/MentorDetail.vue'
 import MentorsList from './pages/mentors/MentorsList.vue'
 import MentorRegistration from './pages/mentors/MentorRegistration.vue'
