@@ -85,7 +85,7 @@ export default {
         last: this.lastName,
         desc: this.description,
         rate: this.rate,
-        area: this.areas
+        areas: this.areas
       }
       this.$emit('save-data', formData)
     }
