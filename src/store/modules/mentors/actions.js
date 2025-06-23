@@ -1,7 +1,7 @@
 export default {
   registerMentor(context, data) {
     const mentorData = {
-      id: context.rootGetters, 
+      id: context.rootGetters.userId,
       firstName: data.first,
       lastName: data.last,
       description: data.desc,
