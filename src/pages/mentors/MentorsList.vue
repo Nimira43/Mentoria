@@ -51,7 +51,7 @@ export default {
   },
   computed: { 
     isMentor() {
-      return this.$store.getters('mentors/isMentor')
+      return this.$store.getters['mentors/isMentor']
     },
     filteredMentors() {
       const mentors = this.$store.getters['mentors/mentors']
