@@ -7,7 +7,7 @@
       <div class="controls">
         <base-button mode="outline">Refresh</base-button>
         <base-button 
-          v-if="!coach"
+          v-if="!isMentor"
           link to="/register"
         >
           Register as Mentor
