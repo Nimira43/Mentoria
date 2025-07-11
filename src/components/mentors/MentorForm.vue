@@ -96,10 +96,35 @@ export default {
   },
   methods: {
     validateForm() {
-      
+      this.formIsValid = true 
+      if (this.firstName.val === '') {
+        this.firstName.isValid = false
+        this.formIsValid = false
+      }
+      if (this.lastName.val === '') {
+        this.lastName.isValid = false
+        this.formIsValid = false
+      }
+      if (this.description.val === '') {
+        this.description.isValid = false
+        this.formIsValid = false
+      }
+      if (!this.rate.val || this.rate.val < 0) {
+        this.rate.isValid = false
+        this.formIsValid = false
+      }
+      if (this.areas.val.length === 0) {
+        this.area.isValid = false
+        this.formIsValid = false
+      }
     },
     submitForm() {
       this.validateForm()
+
+      if (!this.formIsValid) {
+        return
+      }
+
       const formData = {
         first: this.firstName,
         last: this.lastName,
