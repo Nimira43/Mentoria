@@ -52,13 +52,21 @@
       </p>
     </div>
 
-    <div class="form-control">  
+    <div 
+      class="form-control"
+      :class="{invalid: !rate.isValid}"
+    >  
       <label for="rate">Hourly Rate</label>
       <input 
         type="number" 
         id="rate" 
         v-model.number="rate.val"
       />
+      <p
+        v-if="!rate.isValid"
+      >
+        Rate is required
+      </p>
     </div>
 
     <div class="form-control">
