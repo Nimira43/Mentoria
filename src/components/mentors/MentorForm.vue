@@ -5,7 +5,7 @@
       <input 
         type="text" 
         id="firstname" 
-        v-model.trim="firstName"  
+        v-model.trim="firstName.val"  
       />
     </div>
     <div class="form-control">  
@@ -13,7 +13,7 @@
       <input 
         type="text" 
         id="lastname" 
-        v-model.trim="lastName"  
+        v-model.trim="lastName.val"  
       />
     </div>
     <div class="form-control">  
@@ -21,7 +21,7 @@
       <textarea 
         id="description" 
         rows="5"
-        v-model.trim="description"
+        v-model.trim="description.val"
       ></textarea>
     </div>
     <div class="form-control">  
@@ -29,7 +29,7 @@
       <input 
         type="number" 
         id="rate" 
-        v-model.number="rate"
+        v-model.number="rate.val"
       />
     </div>
     <div class="form-control">
@@ -39,7 +39,7 @@
           type="checkbox" 
           id="frontend" 
           value="frontend"
-          v-model="areas"
+          v-model="areas.val"
         >
         <label for="frontend">Frontend Development</label>
       </div>
@@ -48,7 +48,7 @@
           type="checkbox" 
           id="backend" 
           value="backend"
-          v-model="areas"
+          v-model="areas.val"
         >
         <label for="backend">Backend Development</label>
       </div>
@@ -57,7 +57,7 @@
           type="checkbox" 
           id="career" 
           value="career"
-          v-model="areas"
+          v-model="areas.val"
         >
         <label for="career">Career Development</label>
       </div>
