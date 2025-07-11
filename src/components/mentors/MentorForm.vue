@@ -1,20 +1,36 @@
 <template>
   <form @submit.prevent="submitForm">
-    <div class="form-control">
+    <div 
+      class="form-control"
+      :class="{invalid: !firstName.isValid}"
+    >
       <label for="firstname">Firstname</label>
       <input 
         type="text" 
         id="firstname" 
         v-model.trim="firstName.val"  
       />
+      <p
+        v-if="!firstName.isValid"
+      >
+        Firstname is required
+      </p>
     </div>
-    <div class="form-control">  
+    <div 
+      class="form-control"
+      :class="{invalid: !lastName.isValid}"
+    >  
       <label for="lastname">Lastname</label>
       <input 
         type="text" 
         id="lastname" 
         v-model.trim="lastName.val"  
       />
+      <p
+        v-if="!lastName.isValid"
+      >
+        Lastname is required
+      </p>
     </div>
     <div class="form-control">  
       <label for="description">Description</label>
