@@ -62,6 +62,11 @@
         <label for="career">Career Development</label>
       </div>
     </div>
+    <p
+      v-if="!formIsValid"  
+    >
+    Please ensure the above errors are corrected and submit again.
+  </p>
     <base-button>Register</base-button>
   </form>
 </template>
