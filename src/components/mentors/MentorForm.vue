@@ -69,7 +69,10 @@
       </p>
     </div>
 
-    <div class="form-control">
+    <div 
+      class="form-control"
+      :class="{invalid: !areas.isValid}"
+    >  
       <h3>Areas of Expertise</h3>
       <div>
         <input 
@@ -98,6 +101,11 @@
         >
         <label for="career">Career Development</label>
       </div>
+      <p
+        v-if="!areas.isValid"
+      >
+        At least one expertise must be selected
+      </p>
     </div>
     <p
       v-if="!formIsValid"  
