@@ -1,5 +1,6 @@
 <template>
   <form @submit.prevent="submitForm">
+    
     <div 
       class="form-control"
       :class="{invalid: !firstName.isValid}"
@@ -16,6 +17,7 @@
         Firstname is required
       </p>
     </div>
+    
     <div 
       class="form-control"
       :class="{invalid: !lastName.isValid}"
@@ -32,14 +34,24 @@
         Lastname is required
       </p>
     </div>
-    <div class="form-control">  
+    
+    <div 
+      class="form-control"
+      :class="{invalid: !description.isValid}"
+    >  
       <label for="description">Description</label>
       <textarea 
         id="description" 
         rows="5"
         v-model.trim="description.val"
       ></textarea>
+      <p
+        v-if="!description.isValid"
+      >
+        Description is required
+      </p>
     </div>
+
     <div class="form-control">  
       <label for="rate">Hourly Rate</label>
       <input 
@@ -48,6 +60,7 @@
         v-model.number="rate.val"
       />
     </div>
+
     <div class="form-control">
       <h3>Areas of Expertise</h3>
       <div>
