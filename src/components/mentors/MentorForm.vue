@@ -46,6 +46,7 @@
         id="description" 
         rows="5"
         v-model.trim="description.val"
+        @blur="clearValidity('description')" 
       ></textarea>
       <p
         v-if="!description.isValid"
