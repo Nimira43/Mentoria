@@ -64,6 +64,7 @@
         type="number" 
         id="rate" 
         v-model.number="rate.val"
+        @blur="clearValidity('rate')" 
       />
       <p
         v-if="!rate.isValid"
