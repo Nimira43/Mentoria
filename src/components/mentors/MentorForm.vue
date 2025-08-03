@@ -28,6 +28,7 @@
         type="text" 
         id="lastname" 
         v-model.trim="lastName.val"  
+        @blur="clearValidity('lastName')" 
       />
       <p
         v-if="!lastName.isValid"
