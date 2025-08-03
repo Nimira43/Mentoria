@@ -84,6 +84,7 @@
           id="frontend" 
           value="frontend"
           v-model="areas.val"
+          @blur="clearValidity('area')" 
         >
         <label for="frontend">Frontend Development</label>
       </div>
@@ -93,6 +94,7 @@
           id="backend" 
           value="backend"
           v-model="areas.val"
+          @blur="clearValidity('area')"
         >
         <label for="backend">Backend Development</label>
       </div>
@@ -102,6 +104,7 @@
           id="career" 
           value="career"
           v-model="areas.val"
+          @blur="clearValidity('area')"
         >
         <label for="career">Career Development</label>
       </div>
