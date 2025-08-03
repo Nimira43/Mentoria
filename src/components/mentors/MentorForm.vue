@@ -145,6 +145,9 @@ export default {
     }
   },
   methods: {
+    clearValidity(input) {
+
+    },
     validateForm() {
       this.formIsValid = true 
       if (this.firstName.val === '') {
