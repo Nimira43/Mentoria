@@ -9,7 +9,8 @@
       <input 
         type="text" 
         id="firstname" 
-        v-model.trim="firstName.val"  
+        v-model.trim="firstName.val" 
+        @blur="clearValidity('firstName')" 
       />
       <p
         v-if="!firstName.isValid"
