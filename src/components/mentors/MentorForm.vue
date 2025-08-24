@@ -42,6 +42,7 @@
       :class="{invalid: !description.isValid}"
     >  
       <label for="description">Description</label>
+      
       <textarea 
         id="description" 
         rows="5"
